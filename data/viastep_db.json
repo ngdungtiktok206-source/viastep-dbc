@@ -1,0 +1,742 @@
+{
+  "users": [
+    {
+      "id": "usr-passenger-1",
+      "phone": "0912345678",
+      "name": "Nguyễn Văn Hùng",
+      "email": "hung.nguyen@example.com",
+      "role": "passenger",
+      "otpVerified": true,
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr-operator-1",
+      "phone": "0988776655",
+      "name": "Trần Đình Tuấn (HTX An Bình)",
+      "email": "tuan@anbinhtransport.vn",
+      "role": "operator",
+      "otpVerified": true,
+      "createdAt": "2026-08-15T09:30:00.000Z"
+    },
+    {
+      "id": "usr-operator-2",
+      "phone": "0903221144",
+      "name": "Lê Hoàng Minh (CTCP Vận Tải Hoa Sen)",
+      "email": "minh.le@hoasengroup.vn",
+      "role": "operator",
+      "otpVerified": true,
+      "createdAt": "2026-08-20T10:15:00.000Z"
+    },
+    {
+      "id": "usr-admin-1",
+      "phone": "0999000111",
+      "name": "Ban Thanh Tra & Tuân Thủ ViaStep",
+      "email": "compliance@viastep.vn",
+      "role": "admin",
+      "otpVerified": true,
+      "createdAt": "2026-08-01T00:00:00.000Z"
+    }
+  ],
+  "operators": [
+    {
+      "id": "op-anbinh",
+      "userId": "usr-operator-1",
+      "businessName": "Hợp Tác Xã Vận Tải & Dịch Vụ An Bình",
+      "licenseNumber": "GP-KDVT-0108922/HN",
+      "licenseIssuedDate": "2022-04-12",
+      "issuedBy": "Sở Giao thông Vận tải TP. Hà Nội",
+      "taxCode": "0108922119",
+      "representativeName": "Trần Đình Tuấn",
+      "phone": "0988776655",
+      "address": "Số 45 Đường Giải Phóng, Quận Hoàng Mai, Hà Nội",
+      "status": "approved",
+      "rating": 4.9,
+      "completedTripsCount": 248,
+      "bankAccount": {
+        "bankName": "Vietcombank - Chi nhánh Thăng Long",
+        "accountNumber": "0011004389922",
+        "accountHolder": "HTX VAN TAI AN BINH"
+      },
+      "allianceJoinedAt": "2026-08-15T10:00:00.000Z"
+    },
+    {
+      "id": "op-hoasen",
+      "userId": "usr-operator-2",
+      "businessName": "Công Ty Cổ Phần Thương Mại & Vận Tải Hoa Sen",
+      "licenseNumber": "GP-KDVT-0109433/HN",
+      "licenseIssuedDate": "2023-01-18",
+      "issuedBy": "Sở Giao thông Vận tải TP. Hà Nội",
+      "taxCode": "0109433881",
+      "representativeName": "Lê Hoàng Minh",
+      "phone": "0903221144",
+      "address": "Tầng 3 Tòa Nhà Lotus, Phạm Hùng, Cầu Giấy, Hà Nội",
+      "status": "approved",
+      "rating": 4.8,
+      "completedTripsCount": 195,
+      "bankAccount": {
+        "bankName": "Techcombank - CN Keangnam",
+        "accountNumber": "19033481772019",
+        "accountHolder": "CTCP VAN TAI HOA SEN"
+      },
+      "allianceJoinedAt": "2026-08-20T11:00:00.000Z"
+    },
+    {
+      "id": "op-saoviet",
+      "userId": "usr-operator-3",
+      "businessName": "HTX Dịch Vụ Vận Tải Sao Việt Hải Phòng",
+      "licenseNumber": "GP-KDVT-0200881/HP",
+      "licenseIssuedDate": "2024-03-05",
+      "issuedBy": "Sở Giao thông Vận tải TP. Hải Phòng",
+      "taxCode": "0200881944",
+      "representativeName": "Vũ Đức Thịnh",
+      "phone": "0936554433",
+      "address": "Số 112 Lê Thánh Tông, Ngô Quyền, Hải Phòng",
+      "status": "pending",
+      "rating": 4.7,
+      "completedTripsCount": 0,
+      "bankAccount": {
+        "bankName": "MBBank - CN Hải Phòng",
+        "accountNumber": "888019928374",
+        "accountHolder": "HTX SAO VIET HAI PHONG"
+      },
+      "allianceJoinedAt": "2026-09-22T14:30:00.000Z"
+    }
+  ],
+  "operatorDocuments": [
+    {
+      "id": "doc-1",
+      "operatorId": "op-anbinh",
+      "type": "business_license",
+      "title": "Giấy phép Kinh doanh vận tải bằng xe ô tô",
+      "fileName": "GPKD_VanTai_AnBinh_So0108922.pdf",
+      "status": "approved",
+      "uploadedAt": "2026-08-15T09:35:00.000Z",
+      "notes": "Đầy đủ điều kiện xe hợp đồng dưới 8 chỗ"
+    },
+    {
+      "id": "doc-2",
+      "operatorId": "op-anbinh",
+      "type": "badge_sample",
+      "title": "Mẫu phù hiệu Xe Hợp Đồng cấp bởi Sở GTVT",
+      "fileName": "PhuHieu_XeHopDong_AnBinh.pdf",
+      "status": "approved",
+      "uploadedAt": "2026-08-15T09:36:00.000Z"
+    },
+    {
+      "id": "doc-3",
+      "operatorId": "op-saoviet",
+      "type": "business_license",
+      "title": "Giấy phép Kinh doanh vận tải bằng xe ô tô số 0200881/HP",
+      "fileName": "GPKD_SaoViet_HaiPhong.pdf",
+      "status": "pending",
+      "uploadedAt": "2026-09-22T14:35:00.000Z",
+      "notes": "Chờ Ban Quản Trị ViaStep đối chiếu tra cứu trên Cổng thông tin Tổng cục Đường bộ"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "veh-1",
+      "operatorId": "op-anbinh",
+      "plateNumber": "29B-188.45",
+      "brandModel": "Kia Carnival Royal 2024 (7 chỗ)",
+      "seatCapacity": 7,
+      "inspectionExpiry": "2027-04-10",
+      "badgeNumber": "HD-29-00918",
+      "status": "active"
+    },
+    {
+      "id": "veh-2",
+      "operatorId": "op-anbinh",
+      "plateNumber": "29B-205.12",
+      "brandModel": "Ford Tourneo Executive (7 chỗ)",
+      "seatCapacity": 7,
+      "inspectionExpiry": "2026-12-15",
+      "badgeNumber": "HD-29-01124",
+      "status": "active"
+    },
+    {
+      "id": "veh-3",
+      "operatorId": "op-hoasen",
+      "plateNumber": "29F-099.88",
+      "brandModel": "Toyota Innova Cross Hybrid (7 chỗ)",
+      "seatCapacity": 7,
+      "inspectionExpiry": "2027-01-20",
+      "badgeNumber": "HD-29-02391",
+      "status": "active"
+    },
+    {
+      "id": "veh-4",
+      "operatorId": "op-hoasen",
+      "plateNumber": "30K-456.78",
+      "brandModel": "Hyundai Staria VIP Lounge (7 chỗ)",
+      "seatCapacity": 7,
+      "inspectionExpiry": "2027-06-30",
+      "badgeNumber": "HD-30-05812",
+      "status": "active"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "drv-1",
+      "operatorId": "op-anbinh",
+      "fullName": "Phạm Quang Dũng",
+      "phone": "0977112233",
+      "licenseClass": "D",
+      "licenseNumber": "010192837461",
+      "licenseExpiry": "2029-05-15",
+      "judicialRecordNumber": "LLTP-01/2026-8831",
+      "status": "active"
+    },
+    {
+      "id": "drv-2",
+      "operatorId": "op-anbinh",
+      "fullName": "Vũ Quốc Huy",
+      "phone": "0982334455",
+      "licenseClass": "B2",
+      "licenseNumber": "010204918237",
+      "licenseExpiry": "2030-08-10",
+      "judicialRecordNumber": "LLTP-01/2026-9012",
+      "status": "active"
+    },
+    {
+      "id": "drv-3",
+      "operatorId": "op-hoasen",
+      "fullName": "Đặng Thanh Tùng",
+      "phone": "0915667788",
+      "licenseClass": "D",
+      "licenseNumber": "010188726354",
+      "licenseExpiry": "2028-11-20",
+      "judicialRecordNumber": "LLTP-01/2025-4512",
+      "status": "active"
+    }
+  ],
+  "corridors": [
+    {
+      "id": "corridor-hn-hp",
+      "name": "Hà Nội ↔ Hải Phòng",
+      "originCity": "Hà Nội",
+      "destCity": "Hải Phòng",
+      "estimatedHours": 1.5,
+      "distanceKm": 120
+    },
+    {
+      "id": "corridor-hn-qn",
+      "name": "Hà Nội ↔ Quảng Ninh (Hạ Long)",
+      "originCity": "Hà Nội",
+      "destCity": "Quảng Ninh",
+      "estimatedHours": 2.2,
+      "distanceKm": 155
+    },
+    {
+      "id": "corridor-hn-nb",
+      "name": "Hà Nội ↔ Ninh Bình",
+      "originCity": "Hà Nội",
+      "destCity": "Ninh Bình",
+      "estimatedHours": 1.3,
+      "distanceKm": 95
+    },
+    {
+      "id": "corridor-sg-vt",
+      "name": "TP.HCM ↔ Vũng Tàu",
+      "originCity": "TP. Hồ Chí Minh",
+      "destCity": "Bà Rịa - Vũng Tàu",
+      "estimatedHours": 1.8,
+      "distanceKm": 105
+    },
+    {
+      "id": "corridor-sg-pt",
+      "name": "TP.HCM ↔ Phan Thiết",
+      "originCity": "TP. Hồ Chí Minh",
+      "destCity": "Bình Thuận",
+      "estimatedHours": 2.5,
+      "distanceKm": 195
+    }
+  ],
+  "priceTables": [
+    {
+      "id": "pt-1",
+      "operatorId": "op-anbinh",
+      "corridorId": "corridor-hn-hp",
+      "corridorName": "Hà Nội ↔ Hải Phòng",
+      "pricePerSeat": 190000,
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "pt-2",
+      "operatorId": "op-anbinh",
+      "corridorId": "corridor-hn-qn",
+      "corridorName": "Hà Nội ↔ Quảng Ninh (Hạ Long)",
+      "pricePerSeat": 240000,
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "pt-3",
+      "operatorId": "op-anbinh",
+      "corridorId": "corridor-hn-nb",
+      "corridorName": "Hà Nội ↔ Ninh Bình",
+      "pricePerSeat": 160000,
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "pt-4",
+      "operatorId": "op-hoasen",
+      "corridorId": "corridor-hn-hp",
+      "corridorName": "Hà Nội ↔ Hải Phòng",
+      "pricePerSeat": 220000,
+      "updatedAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "pt-5",
+      "operatorId": "op-hoasen",
+      "corridorId": "corridor-hn-qn",
+      "corridorName": "Hà Nội ↔ Quảng Ninh (Hạ Long)",
+      "pricePerSeat": 270000,
+      "updatedAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "pt-6",
+      "operatorId": "op-hoasen",
+      "corridorId": "corridor-hn-nb",
+      "corridorName": "Hà Nội ↔ Ninh Bình",
+      "pricePerSeat": 180000,
+      "updatedAt": "2026-09-05T00:00:00.000Z"
+    }
+  ],
+  "availabilitySlots": [
+    {
+      "id": "slot-1",
+      "operatorId": "op-anbinh",
+      "corridorId": "corridor-hn-hp",
+      "date": "2026-09-24",
+      "timeWindowStart": "07:00",
+      "timeWindowEnd": "09:30",
+      "declaredSeats": 7,
+      "vehicleId": "veh-1",
+      "notes": "Khung giờ linh hoạt sáng đón tận nơi nội thành Hà Nội"
+    },
+    {
+      "id": "slot-2",
+      "operatorId": "op-anbinh",
+      "corridorId": "corridor-hn-hp",
+      "date": "2026-09-24",
+      "timeWindowStart": "13:30",
+      "timeWindowEnd": "16:00",
+      "declaredSeats": 7,
+      "vehicleId": "veh-2",
+      "notes": "Khung giờ linh hoạt chiều Hà Nội - Hải Phòng"
+    },
+    {
+      "id": "slot-3",
+      "operatorId": "op-hoasen",
+      "corridorId": "corridor-hn-hp",
+      "date": "2026-09-24",
+      "timeWindowStart": "08:00",
+      "timeWindowEnd": "10:30",
+      "declaredSeats": 7,
+      "vehicleId": "veh-3",
+      "notes": "Staria Hybrid ghế thương gia cao cấp"
+    }
+  ],
+  "requests": [
+    {
+      "id": "req-1790227355985",
+      "passengerId": "usr-passenger-1",
+      "passengerName": "Hoàng Minh Trí",
+      "passengerPhone": "0987654321",
+      "pickupAddress": "Số 15 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội",
+      "dropoffAddress": "Khách sạn Mường Thanh Luxury, Bãi Cháy, Hạ Long",
+      "corridorId": "corridor-hn-qn",
+      "travelDate": "2026-09-24",
+      "preferredTimeStart": "08:00",
+      "preferredTimeEnd": "10:30",
+      "seatsRequested": 2,
+      "selectionMode": "max_price",
+      "maxPricePerSeat": 280000,
+      "status": "matched",
+      "createdAt": "2026-09-24T05:22:35.985Z",
+      "matchedProposalId": "prop-1790227355986-299"
+    },
+    {
+      "id": "req-demo-1",
+      "passengerId": "usr-passenger-1",
+      "passengerName": "Nguyễn Văn Hùng",
+      "passengerPhone": "0912345678",
+      "pickupAddress": "Số 18 Ngõ 120 Hoàng Quốc Việt, Cầu Giấy, Hà Nội",
+      "dropoffAddress": "Số 50 Điện Biên Phủ, Quận Hồng Bàng, Hải Phòng",
+      "corridorId": "corridor-hn-hp",
+      "travelDate": "2026-09-24",
+      "preferredTimeStart": "07:30",
+      "preferredTimeEnd": "09:00",
+      "seatsRequested": 2,
+      "selectionMode": "max_price",
+      "maxPricePerSeat": 200000,
+      "status": "paid",
+      "createdAt": "2026-09-23T20:10:00.000Z",
+      "matchedProposalId": "prop-1790227355987-603",
+      "contractId": "cnt-1790227360986-146"
+    },
+    {
+      "id": "req-demo-2",
+      "passengerId": "usr-passenger-2",
+      "passengerName": "Trần Thị Thu Hà",
+      "passengerPhone": "0981122334",
+      "pickupAddress": "Tòa Landmark 72, Keangnam, Mễ Trì, Nam Từ Liêm, Hà Nội",
+      "dropoffAddress": "Vinpearl Rivera Hải Phòng, Thượng Lý, Hồng Bàng",
+      "corridorId": "corridor-hn-hp",
+      "travelDate": "2026-09-24",
+      "preferredTimeStart": "07:45",
+      "preferredTimeEnd": "09:15",
+      "seatsRequested": 1,
+      "selectionMode": "max_price",
+      "maxPricePerSeat": 210000,
+      "status": "contract_issued",
+      "createdAt": "2026-09-23T20:15:00.000Z",
+      "matchedProposalId": "prop-1790227355987-603",
+      "contractId": "cnt-1790227360993-177"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "prop-1790227355987-603",
+      "corridorId": "corridor-hn-hp",
+      "corridorName": "Hà Nội ↔ Hải Phòng",
+      "travelDate": "2026-09-24",
+      "timeWindow": "07:30 - 09:00",
+      "requestIds": [
+        "req-demo-1",
+        "req-demo-2"
+      ],
+      "totalSeats": 3,
+      "pickupList": [
+        {
+          "address": "Số 18 Ngõ 120 Hoàng Quốc Việt, Cầu Giấy, Hà Nội",
+          "passengerName": "Nguyễn Văn Hùng",
+          "seats": 2
+        },
+        {
+          "address": "Tòa Landmark 72, Keangnam, Mễ Trì, Nam Từ Liêm, Hà Nội",
+          "passengerName": "Trần Thị Thu Hà",
+          "seats": 1
+        }
+      ],
+      "dropoffList": [
+        {
+          "address": "Số 50 Điện Biên Phủ, Quận Hồng Bàng, Hải Phòng",
+          "passengerName": "Nguyễn Văn Hùng",
+          "seats": 2
+        },
+        {
+          "address": "Vinpearl Rivera Hải Phòng, Thượng Lý, Hồng Bàng",
+          "passengerName": "Trần Thị Thu Hà",
+          "seats": 1
+        }
+      ],
+      "proposedOperatorIds": [
+        "op-anbinh"
+      ],
+      "sentAt": "2026-09-24T05:22:35.987Z",
+      "expiresAt": "2026-09-24T06:07:35.987Z",
+      "status": "accepted",
+      "operatorResponses": [
+        {
+          "operatorId": "op-anbinh",
+          "operatorName": "Hợp Tác Xã Vận Tải & Dịch Vụ An Bình",
+          "action": "accepted",
+          "timestamp": "2026-09-24T05:22:40.986Z"
+        }
+      ],
+      "acceptedOperatorId": "op-anbinh",
+      "acceptedOperatorName": "Hợp Tác Xã Vận Tải & Dịch Vụ An Bình",
+      "acceptedAt": "2026-09-24T05:22:40.986Z"
+    },
+    {
+      "id": "prop-1790227355986-299",
+      "corridorId": "corridor-hn-qn",
+      "corridorName": "Hà Nội ↔ Quảng Ninh (Hạ Long)",
+      "travelDate": "2026-09-24",
+      "timeWindow": "08:00 - 10:30",
+      "requestIds": [
+        "req-1790227355985"
+      ],
+      "totalSeats": 2,
+      "pickupList": [
+        {
+          "address": "Số 15 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội",
+          "passengerName": "Hoàng Minh Trí",
+          "seats": 2
+        }
+      ],
+      "dropoffList": [
+        {
+          "address": "Khách sạn Mường Thanh Luxury, Bãi Cháy, Hạ Long",
+          "passengerName": "Hoàng Minh Trí",
+          "seats": 2
+        }
+      ],
+      "proposedOperatorIds": [
+        "op-anbinh",
+        "op-hoasen"
+      ],
+      "sentAt": "2026-09-24T05:22:35.986Z",
+      "expiresAt": "2026-09-24T06:07:35.986Z",
+      "status": "open",
+      "operatorResponses": [
+        {
+          "operatorId": "op-anbinh",
+          "operatorName": "Hợp Tác Xã Vận Tải & Dịch Vụ An Bình",
+          "action": "viewed",
+          "timestamp": "2026-09-24T05:22:35.986Z"
+        },
+        {
+          "operatorId": "op-hoasen",
+          "operatorName": "Công Ty Cổ Phần Thương Mại & Vận Tải Hoa Sen",
+          "action": "viewed",
+          "timestamp": "2026-09-24T05:22:35.986Z"
+        }
+      ]
+    }
+  ],
+  "contracts": [
+    {
+      "id": "cnt-1790227360986-146",
+      "contractCode": "HDDT-2026-88788",
+      "requestId": "req-demo-1",
+      "passengerId": "usr-passenger-1",
+      "passengerName": "Nguyễn Văn Hùng",
+      "passengerPhone": "0912345678",
+      "operatorId": "op-anbinh",
+      "operatorName": "Hợp Tác Xã Vận Tải & Dịch Vụ An Bình",
+      "operatorLicense": "GP-KDVT-0108922/HN",
+      "operatorTaxCode": "0108922119",
+      "corridorName": "Hà Nội ↔ Hải Phòng",
+      "pickupAddress": "Số 18 Ngõ 120 Hoàng Quốc Việt, Cầu Giấy, Hà Nội",
+      "dropoffAddress": "Số 50 Điện Biên Phủ, Quận Hồng Bàng, Hải Phòng",
+      "travelDate": "2026-09-24",
+      "estimatedPickupTime": "07:30",
+      "seats": 2,
+      "pricePerSeat": 190000,
+      "totalAmount": 380000,
+      "platformFee": 38000,
+      "operatorPayout": 342000,
+      "legalBasis": "Nghị định 10/2020/NĐ-CP, Nghị định 47/2022/NĐ-CP & Luật Giao dịch điện tử 2023",
+      "contractContent": "Hợp đồng vận chuyển điện tử lập riêng cho hành khách Nguyễn Văn Hùng (SĐT: 0912345678) với bên vận tải Hợp Tác Xã Vận Tải & Dịch Vụ An Bình. Đón tại: Số 18 Ngõ 120 Hoàng Quốc Việt, Cầu Giấy, Hà Nội. Trả tại: Số 50 Điện Biên Phủ, Quận Hồng Bàng, Hải Phòng. Giá vé niêm yết bởi nhà xe: 190.000 đ/chỗ. Tổng cộng: 380.000 đ. Đã bao gồm bảo hiểm hành khách theo luật.",
+      "status": "fully_executed",
+      "signature": {
+        "operatorSignedAt": "2026-09-24T05:22:40.993Z",
+        "providerCertificate": "VNPT-CA / Viettel-CA E-Sign Sandbox (Chứng thư số Nhà xe)",
+        "contractHash": "SHA256:0nt3jvngphwf1790227360993",
+        "passengerSignedAt": "2026-09-24T05:22:43.629Z",
+        "passengerIp": "::ffff:127.0.0.1"
+      },
+      "issuedAt": "2026-09-24T05:22:40.993Z",
+      "archivedUntil": "2029-09-23T05:22:40.993Z"
+    },
+    {
+      "id": "cnt-1790227360993-177",
+      "contractCode": "HDDT-2026-15152",
+      "requestId": "req-demo-2",
+      "passengerId": "usr-passenger-2",
+      "passengerName": "Trần Thị Thu Hà",
+      "passengerPhone": "0981122334",
+      "operatorId": "op-anbinh",
+      "operatorName": "Hợp Tác Xã Vận Tải & Dịch Vụ An Bình",
+      "operatorLicense": "GP-KDVT-0108922/HN",
+      "operatorTaxCode": "0108922119",
+      "corridorName": "Hà Nội ↔ Hải Phòng",
+      "pickupAddress": "Tòa Landmark 72, Keangnam, Mễ Trì, Nam Từ Liêm, Hà Nội",
+      "dropoffAddress": "Vinpearl Rivera Hải Phòng, Thượng Lý, Hồng Bàng",
+      "travelDate": "2026-09-24",
+      "estimatedPickupTime": "07:45",
+      "seats": 1,
+      "pricePerSeat": 190000,
+      "totalAmount": 190000,
+      "platformFee": 19000,
+      "operatorPayout": 171000,
+      "legalBasis": "Nghị định 10/2020/NĐ-CP, Nghị định 47/2022/NĐ-CP & Luật Giao dịch điện tử 2023",
+      "contractContent": "Hợp đồng vận chuyển điện tử lập riêng cho hành khách Trần Thị Thu Hà (SĐT: 0981122334) với bên vận tải Hợp Tác Xã Vận Tải & Dịch Vụ An Bình. Đón tại: Tòa Landmark 72, Keangnam, Mễ Trì, Nam Từ Liêm, Hà Nội. Trả tại: Vinpearl Rivera Hải Phòng, Thượng Lý, Hồng Bàng. Giá vé niêm yết bởi nhà xe: 190.000 đ/chỗ. Tổng cộng: 190.000 đ. Đã bao gồm bảo hiểm hành khách theo luật.",
+      "status": "issued",
+      "signature": {
+        "operatorSignedAt": "2026-09-24T05:22:40.993Z",
+        "providerCertificate": "VNPT-CA / Viettel-CA E-Sign Sandbox (Chứng thư số Nhà xe)",
+        "contractHash": "SHA256:02ro9w2ww6qg1790227360993"
+      },
+      "issuedAt": "2026-09-24T05:22:40.993Z",
+      "archivedUntil": "2029-09-23T05:22:40.993Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1790227366631",
+      "contractId": "cnt-1790227360986-146",
+      "requestId": "req-demo-1",
+      "passengerId": "usr-passenger-1",
+      "amount": 380000,
+      "status": "completed",
+      "method": "bank_transfer_qr",
+      "transactionCode": "TXN-1790227366631-494",
+      "paidAt": "2026-09-24T05:22:46.631Z",
+      "platformFeeDeducted": 38000,
+      "operatorPayoutAmount": 342000,
+      "confirmedBy": "Hệ thống Cổng Thanh Toán Sandbox (Thẩm định tự động & đối soát ký quỹ)"
+    }
+  ],
+  "trips": [
+    {
+      "id": "trip-1790227360993",
+      "proposalId": "prop-1790227355987-603",
+      "operatorId": "op-anbinh",
+      "operatorName": "Hợp Tác Xã Vận Tải & Dịch Vụ An Bình",
+      "vehicleId": "veh-1",
+      "vehiclePlate": "29B-188.45",
+      "vehicleModel": "Kia Carnival Royal 2024 (7 chỗ)",
+      "driverId": "drv-1",
+      "driverName": "Phạm Quang Dũng",
+      "driverPhone": "0977112233",
+      "requestIds": [
+        "req-demo-1",
+        "req-demo-2"
+      ],
+      "contractIds": [
+        "cnt-1790227360986-146",
+        "cnt-1790227360993-177"
+      ],
+      "corridorName": "Hà Nội ↔ Hải Phòng",
+      "travelDate": "2026-09-24",
+      "status": "scheduled",
+      "progressStep": 1,
+      "progressStatusText": "Nhà xe đã tiếp nhận và phân công xe 29B-188.45",
+      "passengerDetails": [
+        {
+          "requestId": "req-demo-1",
+          "passengerName": "Nguyễn Văn Hùng",
+          "passengerPhone": "0912345678",
+          "pickupAddress": "Số 18 Ngõ 120 Hoàng Quốc Việt, Cầu Giấy, Hà Nội",
+          "dropoffAddress": "Số 50 Điện Biên Phủ, Quận Hồng Bàng, Hải Phòng",
+          "seats": 2
+        },
+        {
+          "requestId": "req-demo-2",
+          "passengerName": "Trần Thị Thu Hà",
+          "passengerPhone": "0981122334",
+          "pickupAddress": "Tòa Landmark 72, Keangnam, Mễ Trì, Nam Từ Liêm, Hà Nội",
+          "dropoffAddress": "Vinpearl Rivera Hải Phòng, Thượng Lý, Hồng Bàng",
+          "seats": 1
+        }
+      ]
+    }
+  ],
+  "reviews": [],
+  "complaints": [
+    {
+      "id": "comp-1",
+      "contractId": "HDDT-2026-0008",
+      "filedByRole": "passenger",
+      "filedById": "usr-passenger-1",
+      "filedByName": "Nguyễn Văn Hùng",
+      "targetPartyName": "Hợp Tác Xã Vận Tải An Bình",
+      "subject": "Lái xe đến điểm đón trễ 20 phút do tắc đường nút giao Pháp Vân",
+      "content": "Chuyến xe ngày 20/09, tài xế đến trễ nhưng có gọi điện thông báo trước. Đề nghị cải thiện cảnh báo lộ trình.",
+      "status": "resolved",
+      "resolutionNotes": "HTX An Bình đã liên hệ xin lỗi hành khách, gửi voucher ưu đãi 15% cho lần sau. Hành khách hài lòng.",
+      "createdAt": "2026-09-21T10:00:00.000Z",
+      "logs": [
+        {
+          "time": "2026-09-21T10:00:00.000Z",
+          "action": "Mở khiếu nại",
+          "actor": "Hành khách Nguyễn Văn Hùng"
+        },
+        {
+          "time": "2026-09-21T14:30:00.000Z",
+          "action": "Đã giải quyết thỏa đáng giữa hai bên",
+          "actor": "Admin ViaStep"
+        }
+      ]
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1790227363629-moyhv",
+      "timestamp": "2026-09-24T05:22:43.629Z",
+      "eventType": "contract_issued",
+      "description": "Hành khách Nguyễn Văn Hùng đã ký hợp đồng điện tử số HDDT-2026-88788 (Giá: 380.000 đ)",
+      "details": {
+        "contractId": "cnt-1790227360986-146",
+        "contractCode": "HDDT-2026-88788"
+      },
+      "complianceNote": "TUÂN THỦ LUẬT GIAO DỊCH ĐIỆN TỬ: Hợp đồng lưu trữ 3 năm, xác thực qua chữ ký số/OTP bảo mật."
+    },
+    {
+      "id": "log-1790227360994-unwje",
+      "timestamp": "2026-09-24T05:22:40.994Z",
+      "eventType": "proposal_accepted",
+      "description": "Thành viên [Hợp Tác Xã Vận Tải & Dịch Vụ An Bình] đã nhận gói ghép prop-1790227355987-603 (xác nhận đầu tiên lúc 2026-09-24T05:22:40.986Z). Hệ thống tự động sinh 2 hợp đồng điện tử riêng biệt.",
+      "details": {
+        "proposalId": "prop-1790227355987-603",
+        "operatorId": "op-anbinh",
+        "acceptedAt": "2026-09-24T05:22:40.986Z",
+        "contractsCount": 2,
+        "finalPricePerSeat": 190000
+      },
+      "complianceNote": "TUÂN THỦ: Quyết định nhận khách thuộc về Nhà xe. Giá ghi trong HĐ là giá chính thức của Nhà xe, không can thiệp."
+    },
+    {
+      "id": "log-1790227355987-bpc2o",
+      "timestamp": "2026-09-24T05:22:35.987Z",
+      "eventType": "proposal_broadcast",
+      "description": "Hệ thống phát đề xuất gói ghép prop-1790227355987-603 ĐỒNG THỜI tới 1 nhà xe đủ điều kiện (Hà Nội ↔ Hải Phòng, 3 khách)",
+      "details": {
+        "proposalId": "prop-1790227355987-603",
+        "qualifiedOpIds": [
+          "op-anbinh"
+        ],
+        "sentAt": "2026-09-24T05:22:35.987Z",
+        "passengerCount": 2
+      },
+      "complianceNote": "TUÂN THỦ NGHỊ ĐỊNH: Đề xuất phát đồng thời, không gán đơn ưu tiên, ai bấm trước nhận trước, ViaStep không điều xe."
+    },
+    {
+      "id": "log-1790227355986-8yqu4",
+      "timestamp": "2026-09-24T05:22:35.986Z",
+      "eventType": "proposal_broadcast",
+      "description": "Hệ thống phát đề xuất gói ghép prop-1790227355986-299 ĐỒNG THỜI tới 2 nhà xe đủ điều kiện (Hà Nội ↔ Quảng Ninh (Hạ Long), 2 khách)",
+      "details": {
+        "proposalId": "prop-1790227355986-299",
+        "qualifiedOpIds": [
+          "op-anbinh",
+          "op-hoasen"
+        ],
+        "sentAt": "2026-09-24T05:22:35.986Z",
+        "passengerCount": 1
+      },
+      "complianceNote": "TUÂN THỦ NGHỊ ĐỊNH: Đề xuất phát đồng thời, không gán đơn ưu tiên, ai bấm trước nhận trước, ViaStep không điều xe."
+    },
+    {
+      "id": "log-1",
+      "timestamp": "2026-09-22T08:00:00.000Z",
+      "eventType": "license_approved",
+      "description": "Phê duyệt hồ sơ thành viên HTX An Bình sau khi thẩm định Giấy phép kinh doanh vận tải xe hợp đồng",
+      "details": {
+        "operatorId": "op-anbinh",
+        "licenseNumber": "GP-KDVT-0108922/HN"
+      },
+      "complianceNote": "Xác minh đúng thẩm quyền Sở GTVT Hà Nội cấp phép theo NĐ 10/2020/NĐ-CP."
+    },
+    {
+      "id": "log-2",
+      "timestamp": "2026-09-23T20:30:00.000Z",
+      "eventType": "price_updated",
+      "description": "Thành viên CTCP Vận Tải Hoa Sen tự cập nhật biểu giá tuyến Hà Nội - Hải Phòng lên 220.000đ/chỗ",
+      "details": {
+        "operatorId": "op-hoasen",
+        "newPrice": 220000
+      },
+      "complianceNote": "Biểu giá do doanh nghiệp tự quyết, ViaStep không can thiệp hay hạn chế giá."
+    }
+  ],
+  "platformSettings": {
+    "platformFeePercent": 10,
+    "reserveFundPercent": 2,
+    "autoExpireMinutes": 45
+  }
+}

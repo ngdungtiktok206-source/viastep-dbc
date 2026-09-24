@@ -1,0 +1,6 @@
+{
+  "name": "ViaStep - Sàn Thương Mại Điện Tử Vận Tải Xe Hợp Đồng Liên Tỉnh",
+  "description": "Nền tảng thương mại điện tử kết nối hành khách với các đơn vị vận tải xe hợp đồng liên tỉnh có giấy phép, tuân thủ pháp luật vận tải và thương mại điện tử Việt Nam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
